@@ -1,2 +1,2 @@
-# Performing-data-and-CRUD-operations-in-ej2-angular-grid-using-URLAdaptor
-Discover seamless data integration with Syncfusion EJ2 Angular Grid using URLAdaptor in this sample repository. Explore efficient techniques for handling filtering, sorting, paging operations, and CRUD operations within your Angular applications, empowering you to manage and display data effectively.
+# row-drag-and-drop-with-server-side-interaction-in-angular-gantt-chart
+Demo sample for row drag and drop interactions with server side in Gantt Chart
