@@ -4,6 +4,7 @@ Demo sample for row drag and drop interactions with server side in Gantt Chart
 ## Project prerequisites
 
 * Visual Studio 2022
+* .NET 7.0 SDK framework
 
 ### How to run this application?
 
