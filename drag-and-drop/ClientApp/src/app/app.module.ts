@@ -8,9 +8,8 @@ import { GanttModule, SelectionService, EditService, ToolbarService, RowDDServic
 @NgModule({
 
   imports: [
-    BrowserModule, GanttModule,
+    BrowserModule, GanttModule,AppComponent
   ],
-  declarations: [AppComponent],
   providers: [SelectionService, EditService, ToolbarService, RowDDService,],
   bootstrap: [AppComponent]
 })
