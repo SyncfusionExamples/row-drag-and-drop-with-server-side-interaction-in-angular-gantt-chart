@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "UrlAdaptor:build:production"
+              "buildTarget": "UrlAdaptor:build:production"
             },
             "development": {
-              "browserTarget": "UrlAdaptor:build:development",
+              "buildTarget": "UrlAdaptor:build:development",
               "proxyConfig": "proxy.conf.js"
             }
           },
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "UrlAdaptor:build"
+            "buildTarget": "UrlAdaptor:build"
           }
         },
         "test": {

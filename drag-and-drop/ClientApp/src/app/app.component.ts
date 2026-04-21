@@ -1,12 +1,13 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { GanttComponent, ToolbarItem, EditSettingsModel, } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, ToolbarItem, EditSettingsModel, GanttAllModule, } from '@syncfusion/ej2-angular-gantt';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 import { Ajax } from '@syncfusion/ej2-base';
 
 
 @Component({
   selector: 'app-root',
+  imports:[GanttAllModule],
   template: `
     <ejs-gantt #gantt [dataSource]='data' [treeColumnIndex]='1' (rowDrop)="rowDrop($event)" 
     [taskFields]="taskSettings" [splitterSettings] = "splitterSettings" [allowRowDragAndDrop]=true [editSettings]="editSettings" [toolbar]="toolbar" height="450">

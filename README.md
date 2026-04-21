@@ -1,44 +1,33 @@
 # Row Drag and Drop with Server-Side Interaction in Angular Gantt Chart
 
-Demo app showing Syncfusion Angular Gantt drag/drop with an ASP.NET Core backend handling task updates.
+This sample application demonstrates row drag and drop in the Syncfusion Angular Gantt Chart with server-side processing using ASP.NET Core. Task hierarchy changes triggered by drag-and-drop actions are sent to the server, where updates are processed and returned to the client.
 
 ## Overview
 
-This sample shows an Angular SPA loading Gantt task data from the server via Syncfusion `UrlAdaptor`. Row drag/drop events are sent to backend endpoints for updating task hierarchy and CRUD state.
+This repository provides a working example of an Angular SPA integrated with ASP.NET Core backend for Gantt chart functionality. It demonstrates server-side data binding and drag-and-drop updates.
 
 ## Features
 
-- Syncfusion EJ2 Angular Gantt Chart
-- Server-side data retrieval via `UrlAdaptor`
-- Row drag/drop posted to backend
-- CRUD support in the Gantt toolbar
-- ASP.NET Core and Angular SPA integration
+- Syncfusion Angular Gantt Chart with hierarchical task support
+- Server-side data binding using UrlAdaptor
+- Row drag and drop with server-side update handling
+- Toolbar-enabled CRUD operations
+- ASP.NET Core backend integrated with Angular frontend
 
 ## Prerequisites
 
+Ensure the following tools are installed:
+
 - Visual Studio 2022 or later
-- .NET 7.0 SDK
-- Node.js and npm
+- .NET SDK (8.0 or later)
+- Node.js (LTS or later) with npm
 
-## Installation
+## Installation and Running the Sample
 
-1. Open `drag-and-drop/URLAdaptor.sln`.
-2. In `drag-and-drop/ClientApp`, run `npm install`.
-3. Build and run the solution.
+1. Open the solution file: `drag-and-drop/URLAdaptor.sln`
 
-## Usage
+2. Install Angular dependencies by running `cd drag-and-drop/ClientApp && npm install`
 
-The app loads data from `/Home/UrlDatasource`. Row drag/drop sends a POST request to `/Home/DragandDrop`.
+3. Build and run the solution using Visual Studio or run `dotnet run`
 
-## Notes
-
-- Uses `@syncfusion/ej2-angular-gantt`, `@syncfusion/ej2-angular-treegrid`, and `@syncfusion/ej2-angular-grids`.
-- Drag/drop logic is implemented in `Controllers/HomeController.cs`.
-- The sample is configured for HTTPS development proxy.
-
-## Files of interest
-
-- `drag-and-drop/ClientApp/src/app/app.component.ts`
-- `drag-and-drop/Controllers/HomeController.cs`
-- `drag-and-drop/URLAdaptor.csproj`
-- `drag-and-drop/ClientApp/package.json`
+4. Launch the application in the browser using the configured HTTPS URL.
